@@ -11,7 +11,7 @@ defmodule Games.RockPaperScissors do
       {"rock", "paper"} -> IO.puts("ai chose rock. You win! Paper beats rock")
       {"paper", "scissors"} -> IO.puts("ai chose paper. You win! Scissors beats paper")
       {"scissors", "rock"} -> IO.puts("ai chose scissors. You win! Rock beats scissors")
-      {_same, _same} -> IO.puts("ai chose the same thing as you. Draw")
+      _same -> IO.puts("ai chose the same thing as you. Draw")
     end
   end
 end
